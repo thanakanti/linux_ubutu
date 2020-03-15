@@ -1,6 +1,6 @@
 node {
   stage('SCM Checkout') {
-        git 'https://github.com/thanakanti/Jenkins2.git'
+        git 'https://github.com/thanakanti/linux_ubutu.git'
         }
    stage('Compile Project'){
      //Get MAVEN HOME PATH
