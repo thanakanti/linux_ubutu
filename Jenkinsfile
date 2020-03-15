@@ -36,7 +36,7 @@ node {
     //}
  // }
    
-    stage('Deploy to Tomcat'){    
+   // stage('Deploy to Tomcat'){    
 //deploy adapters: [tomcat8(credentialsId: 'db3407bc-e68a-4c2f-bc32-b5abd5f67c6d', path: '', url: 'http://localhost:9090')], contextPath: null, war: 'target/Jenkinsfile.war'
 //deploy adapters: [tomcat8(credentialsId: 'db3407bc-e68a-4c2f-bc32-b5abd5f67c6d', path: '', url: 'http://localhost:9090')], contextPath: null, war: 'target/*.war'
 //  deploy adapters: [tomcat8(credentialsId: 'db3407bc-e68a-4c2f-bc32-b5abd5f67c6d', path: '', url: 'http://localhost:9090')], contextPath: 'rps', war: '**/*.war'
@@ -45,8 +45,8 @@ node {
 //    deploy adapters: [tomcat8(credentialsId: 'ae5ff91a-7497-48cf-827d-01500e9a0f95', path: '', url: 'http://localhost:9090')], contextPath: 'rps', war: '**/sample.war'
   //    deploy adapters: [tomcat8(credentialsId: 'db3407bc-e68a-4c2f-bc32-b5abd5f67c6d', path: '', url: 'http://localhost:9090')], contextPath: 'rps', war: '**/sample.war'
     //  deploy adapters: [tomcat8(credentialsId: '46bacecd-e89a-4208-9cbe-85cf92615f00', path: '', url: 'http://localhost:9090/')], contextPath: 'rps', war: '**/sample.war'
-      deploy adapters: [tomcat8(credentialsId: '515c74e4-d208-4728-a348-eeb8bd4c0252', path: '', url: 'http://localhost:9090')], contextPath: 'rps', war: '**/sample.war'
-  }
+    //  deploy adapters: [tomcat8(credentialsId: '515c74e4-d208-4728-a348-eeb8bd4c0252', path: '', url: 'http://localhost:9090')], contextPath: 'rps', war: '**/sample.war'
+//  }
   stage('Email Notification'){
   mail bcc: '', body: '''Running Pipeline jobs
 Thanks
